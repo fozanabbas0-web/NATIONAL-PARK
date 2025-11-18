@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(4px);    
+  z-index: 10;                    
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.logo span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.homepagevideo {
+  position: fixed;     
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;       
+}
+
+.backgroundvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.homepagevideo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.homepagetext {
+  position: relative;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+.homepagetext h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.homepagetext p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #e0ffe0;
+}
+.inspirationLine {
+  position: relative;
+  margin-top: 100vh;          
+  z-index: 3;
+  text-align: center;
+  padding: 80px 100px;
+  background: rgba(0, 0, 0, 0.6); 
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.Parkhistroy {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 60px 40px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.Parkhistroy img {
+  width: 60%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.Parkhistroy p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.three-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 20px;
+  gap: 25px;
+
+  background: url('../images/Parlayoutbackground.png') center/cover;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.three-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.three-box .box {
+  width: 30%;
+  padding: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #a8ff98;
+}
+
+.box p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.box span {
+  font-size: .95rem;
+  opacity: .8;
+  display: block;
+  margin-top: 5px;
+}
+
+body {
+  background: #000;  
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+.Parkhome {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Parkhome img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  display: block;
+  filter: brightness(70%); 
+}
+
+.park {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.park h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.park p {
+  font-size: 1.2rem;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.park-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);   
+  color: white;
+}
+
+.slide-track {
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 40px;
+  font-size: 1.1rem;
+}
+
+.slide img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.park-cards a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+.park-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  padding: 80px 60px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
+  transform: translateY(40px);
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+}
+
+.card:nth-child(2) { animation-delay: 0.1s; }
+.card:nth-child(3) { animation-delay: 0.2s; }
+.card:nth-child(4) { animation-delay: 0.3s; }
+.card:nth-child(5) { animation-delay: 0.4s; }
+.card:nth-child(6) { animation-delay: 0.5s; }
+
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.04);
+  box-shadow: 0 0 18px rgba(255,255,255,0.25);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card:hover {
+  transform: translateY(-5px) scale(1.08); 
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: white;
+}
+
+.alpine-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.alpine-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.alpine-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 900px;
+}
+
+.alpine-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.alpine-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e6e6e6;
+}
+
+.alpine-intro {
+  padding: 60px 80px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
+  margin: 40px auto;
+  max-width: 950px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.animal-intro {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.animal-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.animal-intro p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.facts {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.fact {
+  background: rgba(255,255,255,0.05);
+  padding: 20px 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+.animal-boxes {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.animal-card {
+  width: 260px;
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.animal-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+
+
